@@ -14,7 +14,7 @@ url: https://regexone.com/
 
 아래 주어진 3개의 열에 맞는 패턴을 어서 작성 해 보세요. **아마 쉬울껍니다.**
 
-![Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled.png](Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/31194565/89977496-33cd5d00-dca6-11ea-9579-d1ddc7da8bc8.png)
 
 ---
 
@@ -26,7 +26,7 @@ url: https://regexone.com/
 
 아래에 숫자를 포함하는 몇개의 문장이 있습니다. 아래에 있는 문자열에 있는 모든 숫자가 일치하는 패턴을 적어보는 것을 시도해보고, 너의 패턴이 단순히 첫 시작 문자가 아닌 **문자열 내 어디든 일치하는 것**을 주목하세요. 나중에 나올 수업에서 우린 이걸 어떻게 컨트롤 할껀지에 대해 배울 것입니다.
 
-![Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled%201.png](Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled%201.png)
+![Untitled1](https://user-images.githubusercontent.com/31194565/89977498-34fe8a00-dca6-11ea-907a-314f459bfe8b.png)
 
 ---
 
@@ -38,7 +38,7 @@ url: https://regexone.com/
 
 아래에 같은 길이이지만 다양한 문자를 가지는 문자열들이 있습니다. 먼저 3개의 문자열을 매칭할 수 있지만 마지막 문자열은 아닌(스킵될 수 있는)  하나의 패턴을 작성 해 보세요. 당신은 몇몇 문장에서 그 범위에 맞추기 위해 . 메타케릭터를 사용하지 말아야 할 수 있습니다.
 
-![Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled%202.png](Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled%202.png)
+![Untitled2](https://user-images.githubusercontent.com/31194565/89977500-362fb700-dca6-11ea-99f7-eb65c28c7c92.png)
 
 > *3개의 문자들을 맞추기 위해선 `...\.` 를 사용할 수 있고, 마침표를 일치시키기 위해 최종 와일드카드 메타 케릭터를 탈출시킬 수 있습니다.*
 
