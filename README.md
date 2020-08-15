@@ -14,7 +14,7 @@ url: https://regexone.com/
 
 아래 주어진 3개의 열에 맞는 패턴을 어서 작성 해 보세요. **아마 쉬울껍니다.**
 
-![Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled.png](Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/31194565/90308365-fec94080-df19-11ea-87bd-d976d6e01007.png)
 
 ---
 
@@ -26,7 +26,7 @@ url: https://regexone.com/
 
 아래에 숫자를 포함하는 몇개의 문장이 있습니다. 아래에 있는 문자열에 있는 모든 숫자가 일치하는 패턴을 적어보는 것을 시도해보고, 너의 패턴이 단순히 첫 시작 문자가 아닌 **문자열 내 어디든 일치하는 것**을 주목하세요. 나중에 나올 수업에서 우린 이걸 어떻게 컨트롤 할껀지에 대해 배울 것입니다.
 
-![Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled%201.png](Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/31194565/90308358-fb35b980-df19-11ea-9880-5514bb6d39df.png)
 
 ---
 
@@ -38,7 +38,7 @@ url: https://regexone.com/
 
 아래에 같은 길이이지만 다양한 문자를 가지는 문자열들이 있습니다. 먼저 3개의 문자열을 매칭할 수 있지만 마지막 문자열은 아닌(스킵될 수 있는)  하나의 패턴을 작성 해 보세요. 당신은 몇몇 문장에서 그 범위에 맞추기 위해 . 메타케릭터를 사용하지 말아야 할 수 있습니다.
 
-![Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled%202.png](Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/31194565/90308359-fcff7d00-df19-11ea-98eb-10c54074f562.png)
 
 > *3개의 문자들을 맞추기 위해선 `...\.` 를 사용할 수 있고, 마침표를 일치시키기 위해 최종 와일드카드 메타 케릭터를 탈출시킬 수 있습니다.*
 
@@ -52,7 +52,7 @@ url: https://regexone.com/
 
 아래 여러줄에서, 처음에 오는 3개의 문자열만 매칭하고 마지막 3개의 문자열은 매칭하지 않길 원해. 우리가 만약 .(점) 을 쓴다면 마지막 3개의 문자열이 매칭되는것을 피할 수 없지만, 위의 표기법을 사용하여 일치시킬 문자를 구체적으로 정의할 수 있어.
 
-![Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled%203.png](Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled%203.png)
+![Untitled 3](https://user-images.githubusercontent.com/31194565/90308361-fd981380-df19-11ea-805b-94a1ce3059a8.png)
 
 > *다른 줄에있는 것들은 매칭하지 않고, 'can', 'man' 그리고 'fan'만 맞추기위해선 정규표현식 [cmf]an 을 사용할 수 있어, 너가 다음 수업에서 볼 수 있듯이 반대로 [^drp]an 이런 정규표현식을 사용한다면 앞 3문자 'd','r','p'로 시작하지 않고 an으로 끝나는 문자를 찾을 수 있어. (역주)위 답이 [cmf]an 말고도 [^drp]an 도 가능하다는 이야기입니다.*
 
@@ -66,7 +66,7 @@ url: https://regexone.com/
 
 아래에 있는 문자열들을 가지고, 살아있는 동물들만 매칭하는 패턴을 한번 작성해봐. (hog, dog... 하지만 bog는 빼구). 이 유형의 대부분 패턴은 실제로 동일한 동전의 양면이기 때문에 지난 강의의 기술을 사용하여 작성 될 수 있다는 것을 명심해. 두가지 선택을 가짐으로서, 너만의 팬턴을 작성할 때 어떤게 더 쉽고 잘 이해 할 수 있는지 정할 수 있어.
 
-![Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled%204.png](Regular%20Expression%20c7f578c159664245907b307f955ff88a/Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/31194565/90308433-7008f380-df1a-11ea-9c0f-2b1319ff3f40.png)
 
 > *가장 간단한 해결방법은 'og' 로 끝나고 'bog'만 매칭하지 않는 '[^b]og` 표현이야. 반대로 이전 단원에서 배운것을 사용하면 '[hd]og'를 사용할 수 있지. 이건 'hog'와 'dog'를 매칭하고 'bog'는 매칭하지 않아. 이게 조금더 제한적인 표현이라는 것을 알아둬. 왜냐하면 이건 매칭될 수 있는 문자열이 제한되니깐.*
 
