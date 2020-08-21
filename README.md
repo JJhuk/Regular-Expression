@@ -4,7 +4,7 @@ Created: 2020년 8월 10일 오후 1:54
 Type: Lecture
 url: https://regexone.com/
 
-# Lesson 1 : An Introduction, and The ABCs - `abc...` Letters
+# Lesson 1: An Introduction, and The ABCs - `abc...` Letters
 
 **정규 표현식**은 코드, 로그 파일, 스프래드시트 그리고 심지어 문서에서부터 정보를 추출할때 매우 효율적입니다. 일반적인 언어  뒤엔 많은 이론들이 있지만, 앞으로 나올 내용과 예제에서 정규 표현식의 실용적인 사용을 최대한 빠르게 익힐 수 있을것입니다.
 
@@ -18,7 +18,7 @@ url: https://regexone.com/
 
 ---
 
-# Lesson 1.5 : The 123s - `123...` Digits / `\d` Any Digit / `\D` Any Non-digit character
+# Lesson 1.5: The 123s - `123...` Digits / `\d` Any Digit / `\D` Any Non-digit character
 
 문자(Character)들은 일반적인 알파뱃을 포함합니다. 숫자 역시 그렇습니다. 사실 0~9 숫자들도 또한 그냥 문자들입니다. 만약 너가 [ASCII table](https://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters)을 본다면 숫자들이 연속적으로 목록에 있는 것을 볼 수 있을것입니다.
 
@@ -30,7 +30,7 @@ url: https://regexone.com/
 
 ---
 
-# Lesson2: The Dot - `.` any character / `./` Period
+# Lesson 2: The Dot - `.` any character / `./` Period
 
 카드게임에서 조커는 와일드카드이면서 댁에 있는 카드 중 어떠한 것들로 나타낼 수 있습니다. 정규표현식을 사용하면 패턴이나 구조(예를 들면 전화번호나 주소와 같이)를 공유한다는 사실 외에 정확한 내용을 모르는 택스트 조각과 일치하는 경우가 많습니다.
 
@@ -85,3 +85,23 @@ url: https://regexone.com/
 ![Untitled 5](https://user-images.githubusercontent.com/31194565/90852998-f195d100-e3b3-11ea-9f97-9fd575d2de81.png)
 
 > *모든 문자들은 연속적이라서, 처음 3줄을 매칭하기 위해 다른 범위 `[A-C][n-p][a-c]` 표현을 사용할 수있어.*
+
+---
+
+# Lesson 6: Catching some zzz's - `{m}` m Repetitions / `{m,n]` m to n Repetitions
+
+*메모: 모든 정규 표현식 구현에 아래에 있는 반복 문법 중 몇몇이 지원이 안되있어.*
+
+우리는 매칭하고 싶은 문자의 범위를 특정시키는 것을 배웠지만, 우리가 매칭하고 싶은 문자가 몇번 반복되는지에 대한건 어덯게 생각하니? 한가지 방법은 우리가 원하는 양의 문자를 정확하게 스팰링을 분리해 지정하여 매칭할 수 있어, 예를들면 정확하게 숫자 3개를 매칭하는 **\d\d\d** 로 말이지.
+
+ 각 문자가 얼마나 반복되는지 지정하는 더 편리한 방법은 **중괄호** 표기법을 사용하는거야. 예를 들면, **a{3}** 정확하게 문자 3번을 매칭할꺼야.  특정 정규 표현식 엔진에서는 심지어 반복의 범위도 지원할 수 있어 예를 들면 **a{1,3}** 과 같이. 이건 1이상 3이하의 반복을 매칭해줘.
+
+이 수량자는 어떠한 문자나 특별한 메타케릭터와도 사용할 수 있어. 예를 들면 **w{3}** (3개의 w들), **[wxy]{5}** (5개의 문자들, 각각은 w, x, y 가 될 수 있음) 그리고 **.{2,6}** (어떠한 문자 (Lesson2 참고) 2~6개).
+
+아래 라인에서, z 가 하나 뿐인 마지막 문자열 "wazzup?" 은 속어의 적절한 스팰링이 아니야. 위에 나와있는 중괄호 표현식을 사용함으로써 아래 주어진 처음 2개 스팰링들만 매칭하는 패턴을 작성해봐.
+
+![Untitled6](https://user-images.githubusercontent.com/31194565/90854207-50107e80-e3b7-11ea-8999-5a0b9178b447.png)
+
+> *우리가 매칭해야하는 처음 2개의 라인에서 여러개의 'z'가 있어, 그래서 표현식 `waz{3,5}up` 은 여러개의 `z`를 매칭할꺼야.*
+
+---
